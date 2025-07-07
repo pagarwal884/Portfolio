@@ -2,7 +2,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMenu, FiX } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { useState } from "react";
-import { a } from "framer-motion/client";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -182,6 +181,7 @@ const Header = () => {
           <button
             onClick={() => {
               toggleMenu();
+              openContactForm();
             }}
             className="mt-4 block w-full px-4 py-2 rounded-lg bg-gradient-to-r from-violet-600 to-violet-400 font-bold">
             Contact Me
