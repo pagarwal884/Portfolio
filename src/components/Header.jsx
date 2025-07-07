@@ -8,6 +8,12 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // state to track if the contact form is open
+  const [contactFormOpen, setContactFormOpen] = useState(false);
+
+  const openContactForm = () => setContactFormOpen(true);
+  const closeContactForm = () => setContactFormOpen(false);
+
   return (
     <header className="absolute w-full z-50 transition-all duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
@@ -99,6 +105,7 @@ const Header = () => {
               stiffness: 100,
               damping: 15,
             }}
+            onClick={openContactForm}
             className="ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-violet-700 hover:text-white hover:from-violet-500 hover:to-violet-700 transition-all duration-500">
             Hire Me
           </motion.button>
@@ -181,6 +188,12 @@ const Header = () => {
           </button>
         </div>
       </motion.div>
+      {/* Contact Form */}
+      {contactFormOpen && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"></div>
+      )}
+
+
     </header>
   );
 };
