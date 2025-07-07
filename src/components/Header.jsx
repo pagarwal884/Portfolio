@@ -251,7 +251,7 @@ const Header = () => {
                     Message
                   </label>
                   <textarea
-                    rows="4"
+                    rows={4}
                     id="message"
                     placeholder="How can I help you?"
                     className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-violet-500 bg-gray-700"
