@@ -30,14 +30,13 @@ const HeroSection = () => {
             duration: 1.5,
           }}
           className="text-xl md:text-1xl lg:text-2xl text-purple-200 max-w-2xl">
-          I’m Piyush Agarwal, a passionate software developer and engineering
-          student at IET, MLSU Udaipur. I specialize in full-stack web
-          development using Django, JavaScript, and cloud deployment tools, with
-          a strong foundation in Java, Python, and C++. I’ve built real-world
-          projects including an Electricity Billing System, Cold Email
-          Generator, and an IPO Registration platform. I thrive on building
-          impactful solutions through continuous learning and hands-on
-          experience.
+          I'm Piyush Agarwal, a software developer specializing in full-stack
+          web development with Django, JavaScript, and cloud platforms. With a
+          strong foundation in Java, Python, and C++, I’ve developed and
+          deployed real-world applications like an Electricity Billing System,
+          Cold Email Generator, and IPO Registration platform. I focus on
+          building scalable, impactful solutions through clean code and
+          continuous innovation.
         </motion.p>
       </div>
     </section>
